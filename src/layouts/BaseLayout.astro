@@ -11,13 +11,13 @@ const { title = 'Astro Svelte Starter', description = 'A starter framework with 
   </head>
   <body>
     <header>
-      <h1>{title}</h1>
+      <h1 class="text-3xl font-bold underline">{title}</h1>
     </header>
     <main>
       <slot />
     </main>
     <footer>
-      <p>&copy; {new Date().getFullYear()} Astro Svelte Starter</p>
+      <p class="text-sm text-gray-500">&copy; {new Date().getFullYear()} Astro Svelte Starter</p>
     </footer>
   </body>
 </html> 

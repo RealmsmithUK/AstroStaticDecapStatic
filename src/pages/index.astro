@@ -2,11 +2,11 @@
 // src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntryBySlug } from 'astro:content';
-
+import '../styles/global.css';
 const home = await getEntryBySlug('pages', 'home');
 ---
 <BaseLayout title={home?.data.title} description="A starter framework with Astro, Svelte, and Decap CMS.">
   <article>
-    {home && home.body}
+    <p class="text-lg text-gray-700">{home && home.body}</p>
   </article>
 </BaseLayout>
